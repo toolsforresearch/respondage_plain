@@ -1,0 +1,111 @@
+.multiple-opt{
+    &.input-error{
+        .answer-container{
+            // background: $RgPink;
+        }
+    }
+
+    li{
+        &.checkbox-item{
+            padding:0;
+            // background: lighten($RgBlue, 35%);
+            color: #222;
+            font-weight: normal;
+            margin-bottom: 5px;
+
+            input[type="checkbox"]{
+                display: none;
+            }
+            
+            .input-sm{
+                font-size: 18px;
+            }
+            
+            &:hover{
+                background: #666;
+                color: white;
+            }
+
+            label{
+                margin-bottom: 0;
+                display: block;
+                font-weight: normal;
+                margin-left: 20px;
+                padding: 10px;
+
+                &::before,
+                &::after{
+                    font-family: "FontAwesome";
+                    content: "\f096";
+                    font-size: 18px;
+                    line-height: 1.2;
+                    top: 10px;
+                    border: none; 
+                    background: transparent;
+                }
+
+                &::before{
+                    left: 10px;
+                }
+
+                &::after{
+                    left: auto;
+                    right: 10px;
+                }
+            }  
+        }
+
+        &.checked {
+            // background: $RgBlue;
+            color: white;
+            margin-left: 15px;
+            margin-right: 15px;
+
+            label{
+                &::before,
+                &::after{
+                    content: "\f046";
+                    color: white;
+                }
+            }
+        }  
+        
+        &.checkbox-text-item{
+
+            .form-group.other-text-item{
+                padding: 15px;
+            }
+
+            label::after{
+                content: "";
+            }
+            
+            
+            &.checked{
+                label::after{
+                    content: "";
+                }
+
+                .form-group.other-text-item{
+                    &::after{
+                        content: "";
+                    }
+                }
+            }
+        }
+    }
+}
+
+.checkbox-item input[type="checkbox"]:checked + label::after {
+    content: "\f046";
+}
+
+.checkbox-item.checkbox-text-item input[type="checkbox"]:checked + label::after {
+    content: "";
+}
+
+@media (max-width: 767px){
+    li.checkbox-item.checkbox-text-item .form-group.other-text-item{
+        padding: 0 15px 15px;
+    }
+}

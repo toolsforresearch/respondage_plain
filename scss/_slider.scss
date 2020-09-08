@@ -1,0 +1,22 @@
+.slider-handle{
+    background-image: none;
+    //background-color: $RgPink;
+    box-shadow: none;
+}
+
+.slider-track{
+    background: #ddd;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.slider-track-low, 
+.slider-track-high{
+    border-radius: 0;
+}
+
+.slider-selection{
+    //background: $RgBlue;
+    box-shadow: none;
+    border-radius: 0;
+}
