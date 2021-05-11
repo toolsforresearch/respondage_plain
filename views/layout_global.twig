@@ -73,7 +73,7 @@
     {# Headers, metadata, etc #}
     {{ include('./subviews/header/head.twig') }}
     {% endblock %}
-    <body class=" {{ aSurveyInfo.class.body }} test lang-{{aSurveyInfo.languagecode}} {{aSurveyInfo.surveyformat}} " {{ aSurveyInfo.attr.body }} >
+    <body class=" {{ aSurveyInfo.class.body }} lang-{{aSurveyInfo.languagecode}} {{aSurveyInfo.surveyformat}} " {{ aSurveyInfo.attr.body }} >
 
         {# This used for the pjax system #}
         {% block pjaxbegin %}
