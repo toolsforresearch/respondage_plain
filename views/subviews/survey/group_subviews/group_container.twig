@@ -19,18 +19,16 @@
 #}
 
 <div class="{{ aSurveyInfo.class.groupcontainer }} " {{ aSurveyInfo.attr.groupcontainer }}>
-
+    
+  <div class="group-header">
     {# Group Name #}
     {{ include('./subviews/survey/group_subviews/group_name.twig') }}
 
     {# Group Description #}
     {{ include('./subviews/survey/group_subviews/group_desc.twig') }}
+  </div>
 
-    {#
-        PRESENT THE QUESTIONS
-
-        This is the main part. It will render each question for this group
-     #}
+    {# PRESENT THE QUESTIONS This is the main part. It will render each question for this group #}
 
     <!-- PRESENT THE QUESTIONS -->
     {% for  aQuestion in aGroup.aQuestions %}

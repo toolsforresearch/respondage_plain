@@ -1,0 +1,115 @@
+@import "colors";
+@import "multiplechoice";
+@import "radiobuttons";
+@import "slider";
+
+body{
+  padding-top: 0;
+  background: #eee;
+}
+
+#welcome-container{
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.privacy{
+  background: white;
+  padding: 15px;
+}
+
+.group-header{
+  margin-bottom: 2rem;
+}
+
+.group-title{
+  font-size: 3rem;
+}
+
+.question-container {
+  margin-bottom: 2rem;
+  border: none;
+  background-color: white;
+  padding: 15px;
+}
+
+.question-title-container{
+  font-size: 2rem;
+  padding: 0;
+}
+
+.yesno-button, .gender-button {
+  float: none;
+  max-width: 250px;
+}
+
+div.qvideo{
+  display: flex;
+}
+
+.qvideo video{
+  max-width: 100%;
+  height: auto;
+}
+
+.qvideo .question-title-container,
+.qvideo .answer-container{
+  flex-grow: 2;
+}
+
+.qvideo .question-title-container{
+  background: transparent;
+  color: #5A1D64;
+}
+
+.qvideo .answer-container{
+  padding-left: 30px;
+}
+
+.qvideo .question-valid-container{
+  display: none;
+}
+
+.checkbox-item{
+  padding-left: 0;
+}
+
+.checkbox-item label::before{
+  font-family: "FontAwesome";
+  content: "\f096";
+  font-size: 24px;
+  line-height: 1.0;
+  top: 0px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 0;
+  padding-left: 0;
+  display: inline-block;
+  width: 30px;
+}
+.checkbox-item input[type="checkbox"]:checked + label::before{
+  content: "\f046";
+}
+
+.checkbox-item input[type="checkbox"]:checked + label::after, .checkbox-item input[type="radio"]:checked + label::after {
+  display: none;
+}
+
+.checkbox-item label{
+  padding-left: 30px;
+}
+
+.hide-first-row table.ls-answers tr.answers-list:first-child{
+  display: none;
+}
+
+#surveys-list-container{
+  background: white;
+  padding-top: 30px;
+}
+
