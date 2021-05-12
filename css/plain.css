@@ -1,24 +1,24 @@
-body{
+body {
   padding-top: 0;
   background: #eee;
 }
 
-#welcome-container{
+#welcome-container {
   background: white;
   padding: 15px;
   margin-bottom: 15px;
 }
 
-.privacy{
+.privacy {
   background: white;
   padding: 15px;
 }
 
-.group-header{
+.group-header {
   margin-bottom: 2rem;
 }
 
-.group-title{
+.group-title {
   font-size: 3rem;
 }
 
@@ -29,48 +29,57 @@ body{
   padding: 15px;
 }
 
-.question-title-container{
+.question-title-container {
   font-size: 2rem;
   padding: 0;
 }
 
-.yesno-button, .gender-button {
+.yesno-button,
+.gender-button {
   float: none;
   max-width: 250px;
 }
 
-div.qvideo{
+div.qvideo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
-.qvideo video{
+.qvideo video {
   max-width: 100%;
   height: auto;
 }
 
 .qvideo .question-title-container,
-.qvideo .answer-container{
-  flex-grow: 2;
+.qvideo .answer-container {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 
-.qvideo .question-title-container{
+.qvideo .question-title-container {
   background: transparent;
   color: #5A1D64;
 }
 
-.qvideo .answer-container{
+.qvideo .answer-container {
   padding-left: 30px;
 }
 
-.qvideo .question-valid-container{
+.qvideo .question-valid-container {
   display: none;
 }
 
-.checkbox-item{
+.checkbox-item {
   padding-left: 0;
 }
 
-.checkbox-item label::before{
+.checkbox-item label {
+  padding-left: 30px;
+}
+
+.checkbox-item label::before {
   font-family: "FontAwesome";
   content: "\f096";
   font-size: 24px;
@@ -87,18 +96,22 @@ div.qvideo{
   display: inline-block;
   width: 30px;
 }
-.checkbox-item input[type="checkbox"]:checked + label::before{
+
+.checkbox-item input[type="checkbox"]:checked + label::before {
   content: "\f046";
 }
 
-.checkbox-item input[type="checkbox"]:checked + label::after, .checkbox-item input[type="radio"]:checked + label::after {
+.checkbox-item input[type="checkbox"]:checked + label::after,
+.checkbox-item input[type="radio"]:checked + label::after {
   display: none;
 }
 
-.checkbox-item label{
-  padding-left: 30px;
-}
-
-.hide-first-row table.ls-answers tr.answers-list:first-child{
+.hide-first-row table.ls-answers tr.answers-list:first-child {
   display: none;
 }
+
+#surveys-list-container {
+  background: white;
+  padding-top: 30px;
+}
+/*# sourceMappingURL=plain.css.map */

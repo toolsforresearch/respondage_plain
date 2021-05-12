@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    (¯`·._.·(¯`·._.· Vanilla Theme Manifest  ·._.·´¯)·._.·´¯)
+    (¯`·._.·(¯`·._.· Respondage Plain Theme Manifest  ·._.·´¯)·._.·´¯)
 
-    Base configuration for Vanilla Theme.
+    Base configuration for Respondage Plain (extension from Vanilla).
     The content of this file is imported into DB when you install the template.
 
 -->
@@ -16,12 +16,17 @@
         <author>Tammo ter Hark</author>
         <authorEmail>research@respondage.eu</authorEmail>
         <authorUrl>http://www.respondage.nl</authorUrl>
-        <copyright>Copyright (C) 2020 Respondage, The Netherlands</copyright>
+        <copyright>Copyright (C) 2021 Respondage, The Netherlands</copyright>
         <license>GNU General Public License version 2 or later</license>
         <version>3.0</version>
         <apiVersion>3</apiVersion>
+<<<<<<< HEAD
         <description twig="on"><![CDATA[<strong>Respondage improvement of LimeSurveys Vanilla Theme</strong><br>An even cleaner version to be used as a clean slate to work on.]]></description>
         <last_update>2020-12-25 17:57:31</last_update>
+=======
+        <description twig="on"><![CDATA[<strong>Respondage extension of LimeSurvey's Vanilla Theme</strong><br>An even cleaner version to be used as a clean slate to work on.]]></description>
+        <last_update>2021-05-11 20:00:00</last_update>
+>>>>>>> 319c08836555304a22d6f314b3518f66a7180ae6
     <extends>vanilla</extends></metadata>
 
     <!--
