@@ -1,8 +1,3 @@
-// @import "colors";
-// @import "multiplechoice";
-// @import "radiobuttons";
-// @import "slider";
-
 body{
   padding-top: 0;
   background: #eee;
@@ -74,7 +69,6 @@ div.qvideo{
   }
 }
 
-
 .checkbox-item{
   padding-left: 0;
 
@@ -92,12 +86,12 @@ div.qvideo{
     height: 24px;
     border: none;
     background: transparent;
-    margin-left: 0;
+    margin-left: 0px;
     margin-right: 0;
     padding-right: 0;
     padding-left: 0;
     display: inline-block;
-    width: 30px;
+    width: 15px;
   }
 
   input[type="checkbox"]:checked + label::before{

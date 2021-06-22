@@ -89,12 +89,12 @@ div.qvideo {
   height: 24px;
   border: none;
   background: transparent;
-  margin-left: 0;
+  margin-left: 0px;
   margin-right: 0;
   padding-right: 0;
   padding-left: 0;
   display: inline-block;
-  width: 30px;
+  width: 15px;
 }
 
 .checkbox-item input[type="checkbox"]:checked + label::before {
