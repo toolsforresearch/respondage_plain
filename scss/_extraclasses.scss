@@ -1,14 +1,31 @@
 @use 'colors';
 
-.qback_red .question-title-container {
-  background: colors.$red;
+//These classes are developed for use in experssions. With these classes you can change the background color of a question titel container with expression script.
+.qback_red .question-title-container{
+  background: red;
 }
 
-.qback_orange .question-title-container {
+.qback_orange .question-title-container{
   background: darkorange;
 }
 
-.qback_green .question-title-container {
+.qback_green .question-title-container{
   background: darkgreen;
 }
 
+.wit .question-title-container{
+  background: transparent;
+  color: #333;
+}
+
+.qback_transparent .question-title-container{
+  background: transparent;
+  color: #333;
+}
+
+
+// This class is for displaying the smiley list without a border
+.no-border .smiley-list{
+  border: none;
+  border-radius: 0;
+}

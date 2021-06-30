@@ -1,4 +1,31 @@
 @charset "UTF-8";
+.qback_red .question-title-container {
+  background: red;
+}
+
+.qback_orange .question-title-container {
+  background: darkorange;
+}
+
+.qback_green .question-title-container {
+  background: darkgreen;
+}
+
+.wit .question-title-container {
+  background: transparent;
+  color: #333;
+}
+
+.qback_transparent .question-title-container {
+  background: transparent;
+  color: #333;
+}
+
+.no-border .smiley-list {
+  border: none;
+  border-radius: 0;
+}
+
 body {
   padding-top: 0;
   background: #eee;
@@ -102,21 +129,4 @@ div.qvideo {
 #surveys-list-container {
   background: white;
   padding-top: 30px;
-}
-
-.qback_red .question-title-container {
-  background: red;
-}
-
-.qback_orange .question-title-container {
-  background: darkorange;
-}
-
-.qback_green .question-title-container {
-  background: darkgreen;
-}
-
-.no-border .smiley-list {
-  border: none;
-  border-radius: 0;
 }/*# sourceMappingURL=plain.css.map */

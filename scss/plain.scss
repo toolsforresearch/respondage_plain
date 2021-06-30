@@ -1,3 +1,6 @@
+@use 'colors';
+@use 'extraclasses';
+
 body{
   padding-top: 0;
   background: #eee;
@@ -113,19 +116,3 @@ div.qvideo{
   padding-top: 30px;
 }
 
-.qback_red .question-title-container{
-  background: red;
-}
-
-.qback_orange .question-title-container{
-  background: darkorange;
-}
-
-.qback_green .question-title-container{
-  background: darkgreen;
-}
-
-.no-border .smiley-list{
-  border: none;
-  border-radius: 0;
-}
