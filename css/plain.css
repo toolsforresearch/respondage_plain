@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   padding-top: 0;
   background: #eee;
@@ -41,8 +42,6 @@ body {
 }
 
 div.qvideo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -50,23 +49,17 @@ div.qvideo {
   max-width: 100%;
   height: auto;
 }
-
 .qvideo .question-title-container,
 .qvideo .answer-container {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
+  flex-grow: 2;
 }
-
 .qvideo .question-title-container {
   background: transparent;
   color: #5A1D64;
 }
-
 .qvideo .answer-container {
   padding-left: 30px;
 }
-
 .qvideo .question-valid-container {
   display: none;
 }
@@ -74,16 +67,14 @@ div.qvideo {
 .checkbox-item {
   padding-left: 0;
 }
-
 .checkbox-item label {
   padding-left: 30px;
 }
-
 .checkbox-item label::before {
   font-family: "FontAwesome";
-  content: "\f096";
+  content: "";
   font-size: 24px;
-  line-height: 1.0;
+  line-height: 1;
   top: 0px;
   width: 24px;
   height: 24px;
@@ -96,13 +87,11 @@ div.qvideo {
   display: inline-block;
   width: 15px;
 }
-
-.checkbox-item input[type="checkbox"]:checked + label::before {
-  content: "\f046";
+.checkbox-item input[type=checkbox]:checked + label::before {
+  content: "";
 }
-
-.checkbox-item input[type="checkbox"]:checked + label::after,
-.checkbox-item input[type="radio"]:checked + label::after {
+.checkbox-item input[type=checkbox]:checked + label::after,
+.checkbox-item input[type=radio]:checked + label::after {
   display: none;
 }
 
@@ -125,5 +114,4 @@ div.qvideo {
 
 .qback_green .question-title-container {
   background: darkgreen;
-}
-/*# sourceMappingURL=plain.css.map */
+}/*# sourceMappingURL=plain.css.map */
