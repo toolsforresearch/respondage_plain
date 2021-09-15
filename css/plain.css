@@ -1,4 +1,16 @@
 @charset "UTF-8";
+.qback_red .question-title-container {
+  background: red;
+}
+
+.qback_orange .question-title-container {
+  background: darkorange;
+}
+
+.qback_green .question-title-container {
+  background: darkgreen;
+}
+
 body {
   padding-top: 0;
   background: #eee;
@@ -102,16 +114,4 @@ div.qvideo {
 #surveys-list-container {
   background: white;
   padding-top: 30px;
-}
-
-.qback_red .question-title-container {
-  background: red;
-}
-
-.qback_orange .question-title-container {
-  background: darkorange;
-}
-
-.qback_green .question-title-container {
-  background: darkgreen;
 }/*# sourceMappingURL=plain.css.map */
